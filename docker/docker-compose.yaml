@@ -1,0 +1,16 @@
+services:
+  wormhole:
+    build: './wormhole'
+    image: wormhole
+    ports:
+      - "5000:5000"
+    volumes:
+      - ${PWD}/wormhole
+
+  worker:
+    build: './worker'
+    image: worker
+    depends_on:
+      - wormhole
+    volumes:
+      - ${PWD}/worker
