@@ -48,7 +48,7 @@ def create_app():
     def info():
         return hostinfo
     return app
-    
+
 discover = "http://host.docker.internal:5000/discover"
 #discover = "http://localhost:5000/discover"
 hostinfo = get_host_info()
