@@ -20,7 +20,7 @@ requirements:
 
 Install with git
 ```
-$ git clone <repo>
+$ git clone https://github.com/jlangdev/wormhole.git
 ```
 ## Usage
 First, stand up the environment with docker compose.
